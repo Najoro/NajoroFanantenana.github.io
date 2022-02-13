@@ -1,0 +1,167 @@
+:root{
+     --bg-1: #57b6a349;
+     --bg-2: #e4af87;
+}
+@font-face {
+     font-family: "font-1";
+     src: url(./inserer/Akaya_Telivigala/AkayaTelivigala-Regular.ttf);
+}
+*{
+     padding: 0;
+     margin: 0;
+     font-family:"font-1", serif;
+}
+ul li{
+     list-style: none;
+}
+body{
+     min-width: 100vh;
+}
+header{
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     margin-bottom: 10px;
+     background: var(--bg-2);
+     padding: 1rem;
+}
+header h1{
+     font-size: 25px;
+     font-weight: bold;
+     position: relative;
+     width: auto;
+     padding-left: 1.6rem;
+     cursor: not-allowed;
+     margin-left: 5rem;
+}
+header h1::before{
+     content: "";
+     width: 20px;
+     height: 20px;
+     background: blue;
+     position: absolute;
+     top: 6px;
+     left: 0;
+}
+.menu-bare ul li{
+     display: inline;
+     margin: 0 1rem;
+     cursor: pointer;
+     font-size: 1.1rem;
+     
+}
+.menu-bare ul li:hover{
+     color: blue;
+}
+main{
+     height: 100vh;
+     overflow: hidden;
+     display: grid;
+     margin: 2px 2rem 2rem;
+     grid-template-columns: 40% 60%;
+     background: linear-gradient( to left,var(--bg-1) 70%, #fff 30%);
+}
+.gauche{
+     width: 25rem;
+     background: var(--bg-2);
+     margin: 2rem auto;
+     text-align: center;
+     position: relative;
+     top: -0.6rem;
+     left: 1rem;
+     box-shadow: -2px 3px 20px 0px rgba(0, 0, 0, 0.5);
+}
+.image{
+     width: inherit;
+     margin: 3rem auto 2rem;
+     position: relative;
+}
+.image h1{
+     font-size: 2.4rem;
+     margin-bottom: 1.6rem;
+     letter-spacing: 2px;
+     color: #000;
+}
+.image::after{
+     content: "";
+     width: 9rem;
+     height: 2px;
+     position: absolute;
+     background: blue;
+     border-radius: 2rem;
+     transform: translateX(-50%);
+}
+.contact {
+     display: block;
+     width: inherit;
+     letter-spacing: 1px;
+     font-size: 1.2rem;
+}
+.contact p{
+     padding: 1.6rem 0;
+     font-size: 2rem;
+     color: red;
+     letter-spacing: 9px;
+} 
+
+.droit{
+     padding: 5rem 5rem 0 5rem;
+}
+.droit h1{
+     font-size: 5rem;
+     margin-bottom: 1.2rem;
+     letter-spacing: 5px;
+}
+.droit h2{
+     font-size: 2.5rem;
+     letter-spacing: 1px;
+     word-spacing: 2px;
+     font-weight: normal;
+}
+.contenaire-btm{
+     margin: 2rem 2rem 2rem 0;
+     display: flex;
+}
+input[type="checkbox"]{
+     display: none;
+}
+.btm{
+     width: 5rem;
+     text-align: center;
+     border: 3px solid blue;
+     color: blue;
+     padding: 5px 3rem;
+     font-size: 1.2rem;
+     margin-right: 10px;
+     border-radius:20px;
+     transition: 0.2s linear;
+     cursor: pointer;
+}
+.btm:hover{
+     color: #fff;
+     background: blue;
+     font-weight: bold;
+     transform:scale(1.1);
+}
+.btm:active{
+     animation: anim 1s ease-in-out;
+}
+@keyframes anim {
+     from{
+          transform: scale(1);
+     }
+     to{
+          transform: scale(0.9);
+     }
+}
+.droit p{
+     padding-top:1.2rem ;
+     letter-spacing: 2px;
+     word-spacing: 3px;
+     font-size: 1.5rem;
+}
+.nom{
+     font-size: 1.7rem;
+     font-weight: bold;
+     color:red;
+}

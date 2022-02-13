@@ -1,12 +1,65 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
      <meta charset="UTF-8">
      <meta http-equiv="X-UA-Compatible" content="IE=edge">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+     <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="./inserer/fontawesome-free-5.15.4-web/css/all.min.css">
      <title>Document</title>
 </head>
 <body>
-     <h1>First test</h1>
+     <header>
+          <h1>Porfolio</h1>
+          <div class="menu-bare">
+               <ul>
+                    <li>MOI</li>
+                    <li>CV</li>
+                    <li>PROJECTS</li>
+                    <li>CONTACT</li>
+               </ul>
+          </div>
+     </header>
+     <main>
+          <aside class="gauche box">
+               <div class="image">
+                    <img src="./inserer/njr.jpg" alt="" style="height: 200px;width:203px; border-radius:50%;">
+                    <h1 class ="nom">
+                         Najoro <br> Fanantenana
+                    </h1>
+               </div>
+               <div class="contact">
+                    <p>Etudiant</p>
+                    <ul>
+                         <li> <strong><u> E-mail</u></strong>  : najofanantenana@gmail.com</li>
+                         <li><strong><u>Tel</u></strong> : 034 31 058 82</li>
+                    </ul>
+               </div>
+               <footer>
+                    <i class="fa-brands fa-facebook-f"></i>
+               </footer>
+          </aside>
+          <aside class="droit box">
+               <h1>HELLO !</h1>
+               <h2>Qui je suis et ce que je fais ??</h2>
+               <div class="contenaire-btm">
+                    <input type="checkbox"  name="btm" id="cv">
+                    <label for="cv"class ="btm">CV</label>
+
+                    <input type="checkbox"  name="btm" id="project">
+                    <label for="project" class = "btm">PROJECTS</label>
+               </div>
+               <p>
+               << Je m'appel <span class ="nom">RAHERIMANATSOA Najoro Fanantenana</span>,
+                    etudiant en Mathematique Informatique, 
+                    et en CNTEMAD Ankadifotsy.Passionner par
+                    la nouvelle technologie et la creativite
+                    j'aimerais transformer mes passion en une travaille >>
+               </p>
+          </aside>
+     </main>
+
+  
 </body>
 </html>
